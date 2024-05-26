@@ -1,0 +1,29 @@
+.footer{
+  background-color: $background-color;
+  padding: 60px 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  &-row{
+    display: flex;
+    @include flex(center, space-between);
+  }
+  &-content__icons{
+   display: flex;
+  }
+  &-content__tel{
+    display: flex;
+    gap: 10px;
+    @include flex(center, space-between);
+  }
+  &-content__location{
+    display: flex;
+    @include flex(center,0);
+
+  }
+  &-content__toshkent{
+    margin-bottom: 10px;
+   }
+   &-content__stop{
+    display: flex;
+    gap: 10px;
+   }
+}

@@ -1,0 +1,67 @@
+.top{
+  height: 650px;
+  &-row_start{
+    @include flex(center, space-between);
+  }
+&-row_start__title{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 39px;
+  color: $black-color;
+}
+&-row_start__button{
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1c1917;
+  border: 1px solid black;
+  padding: 18px 36px;
+  border-radius: 8px;
+  &:hover{
+    background-color: $buttom-color;
+    border: none;
+    color: $white-color;
+  }
+}
+&-color_title{
+  color: $buttom-color;
+}
+&-row_images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+}
+&-row_icons{
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+&-row_image{
+  width: 337px;
+  height: 260px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding:0 0 24px 24px;
+
+  &__title{
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  &__subtitle{
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+}
+.svg_and_subtitle{
+  display: flex;
+  @include flex(center, space-between)
+}
